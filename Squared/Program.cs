@@ -8,16 +8,40 @@ namespace Squared
         static void Main(string[] args)
         {
             var randNums = new RandomNums();
-            int amount = 13;
+            int amount = 20;
             var numbers = randNums.NoShit(amount);
-            Console.WriteLine(String.Join(" ", numbers));
             
+            Console.WriteLine("This is a random string of 20 numbers");
+            Console.WriteLine(String.Join(" ", numbers));
+            Console.WriteLine("This is the random string list squard");
+            foreach (int item in numbers)
+            {
+                var itemToMultiply = item * item;
+                
+                Console.Write(itemToMultiply + " ");
+            }
+
             Console.ReadLine();
         }
-
-
     }
 }
+            
+
+
+            
+            
+            
+
+
+
+
+            
+            
+
+
+            
+            
+
 
 
 
