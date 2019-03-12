@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Squared
 {
@@ -6,7 +7,21 @@ namespace Squared
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var randNums = new RandomNums();
+            int amount = 13;
+            var numbers = randNums.NoShit(amount);
+            Console.WriteLine(String.Join(" ", numbers));
+            
+            Console.ReadLine();
         }
+
+
     }
 }
+
+
+
+
+
+
+
